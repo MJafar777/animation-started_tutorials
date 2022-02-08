@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.animate {
+  width: 200px;
+  height: 200px;
+  margin: 50px 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.yellow1,
+.green1,
+.blue1,
+.red1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 50px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.blue1 {
+  background-color: blue;
+  animation-name: blue_1;
+}
+.yellow1 {
+  background-color: yellow;
+  animation-name: yellow_1;
+}
+.green1 {
+  background-color: green;
+  animation-name: green_1;
+}
+.red1 {
+  background-color: red;
+  animation-name: red_1;
+}
+
+@keyframes yellow_1 {
+  0% {
+    transform: translate(0 0);
+  }
+  25% {
+    transform: translate(200px, 0);
+  }
+  50% {
+    transform: translate(200px, 200px);
+  }
+  75% {
+    transform: translate(0, 200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes green_1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 200px);
+  }
+  50% {
+    transform: translate(-200px, 200px);
+  }
+  75% {
+    transform: translate(-200px, 0);
+  }
+}
+@keyframes blue_1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -200px);
+  }
+  50% {
+    transform: translate(200px, -200px);
+  }
+  75% {
+    transform: translate(200px, 0);
+  }
+}
+@keyframes red_1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-200px, 0);
+  }
+  50% {
+    transform: translate(-200px, -200px);
+  }
+  75% {
+    transform: translate(0, -200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

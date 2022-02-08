@@ -1,0 +1,96 @@
+@media (max-width: 1000px) {
+  .animate {
+    margin: 50px 300px;
+  }
+}
+@media (max-width: 730px) {
+  .animate {
+    margin: 50px 150px;
+  }
+  .blue1 {
+    background-color: blue;
+    animation-name: blue_1;
+  }
+  .yellow1 {
+    background-color: yellow;
+    animation-name: yellow_1;
+  }
+  .green1 {
+    background-color: green;
+    animation-name: green_1;
+  }
+  .red1 {
+    background-color: red;
+    animation-name: red_1;
+  }
+  .yellow1,
+  .green1,
+  .blue1,
+  .red1 {
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+  }
+  @keyframes yellow_1 {
+    0% {
+      transform: translate(0 0);
+    }
+    25% {
+      transform: translate(150px, 0);
+    }
+    50% {
+      transform: translate(150px, 150px);
+    }
+    75% {
+      transform: translate(0, 150px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  @keyframes green_1 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0, 150px);
+    }
+    50% {
+      transform: translate(-150px, 150px);
+    }
+    75% {
+      transform: translate(-150px, 0);
+    }
+  }
+  @keyframes blue_1 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0, -150px);
+    }
+    50% {
+      transform: translate(150px, -150px);
+    }
+    75% {
+      transform: translate(150px, 0);
+    }
+  }
+  @keyframes red_1 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-150px, 0);
+    }
+    50% {
+      transform: translate(-150px, -150px);
+    }
+    75% {
+      transform: translate(0, -150px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}
